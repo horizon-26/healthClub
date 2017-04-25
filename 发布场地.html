@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>发布场地</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css"  type="text/css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class=""></div>
+    <div class="container">
+        <div class="title">
+            <span class="title-main">发布场地</span>
+            <button type="" class="btn btn-default  btn-return"><a href="管理员-场地管理.html">返回</a></button>
+        </div>
+        <div class="content-tip">
+            <p>操作提示：发布场地信息</p>
+        </div>
+
+        <div class="add-user-content">
+         <form class="form-horizontal" role="form" >
+
+            <!-- 场地编号默认是场地id，若系统自动分配 这段去掉 -->
+            <div class="form-group">
+                <label  class="col-md-2 col-xs-2 control-label" for="user_name">场地编号:</label>
+                <div class="col-md-4 col-xs-4">
+                    <input type="text" class="form-control" id="user_name" placeholder="请输入场地编号" >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="col-md-2 col-xs-2 control-label" for="user_name">房间号:</label>
+                <div class="col-md-4 col-xs-4">
+
+                    <input type="text" class="form-control" id="user_name" placeholder="请输入场地编号" >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label  class="col-md-2 col-xs-2 control-label" for="user_name">房间状态:</label>
+                <div class="col-md-4 col-xs-4">
+                  <select  class="form-control" name="" id="statuSelect">
+                    <option value="0" selected>正在使用</option>
+                    <option value="1">停用</option>
+                    <option value="2">未使用</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label  class=" col-md-2 col-xs-2 control-label" for="user_id">场地介绍:</label>
+                <div class=" col-md-4 col-xs-4">
+                    <textarea name="user_id" type="text" rows="8" class="form-control"  placeholder="场地介绍(最好不要超过50字)" style="resize:none;"></textarea>
+                    <!-- <input type="text" class="form-control" id="user_id" placeholder="  " > -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 col-xs-2 control-label">场地状态</label>
+                <div class=" col-md-4 col-xs-4">
+                  <input type="radio" name="state" value="disable" placeholder="停用">
+                  <label>停用</label>
+                  <input class="sex-radio" type="radio" name="state" value="using" placeholder="正在使用">
+                  <label>正在使用</label>
+                  <input class="sex-radio" type="radio" name="state" value="unused" placeholder="未使用">
+                  <label>未使用</label>
+              </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-offset-2 col-xs-offset-2 col-md-4 col-xs-4">
+              <button type="submit" class="btn btn-primary">发布</button>
+          </div>
+      </div>
+  </form>
+</div>
+</div>
+
+<script src="js/jquery-1.11.min.js"></script>
+<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8">
+</script>
+<script>
+
+</script>
+</body>
+</html>

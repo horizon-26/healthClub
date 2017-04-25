@@ -1,0 +1,29 @@
+*{ margin:0; padding:0;}
+html { height: 100%; }
+body { background: #FFF; min-width: 1000px; height:100%;position:relative;}
+html.index{ height: 100%; overflow: hidden; }
+.clearfix:after {visibility: hidden; display: block; content:" "; clear:both; height:0; line-height:0; font-size:0;}
+.clearfix{*zoom:1;}
+body, td, input, textarea, select,
+button { color: #555; font-size: 14px; font-family: "Microsoft Yahei", "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; }
+body, ul, ol, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset { margin: 0; padding: 0; }
+ul, ol, li { list-style-image: none; list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+a {  color: #3E93FD;  text-decoration: none; }
+a:hover,a:visited,a:focus { text-decoration: none; }
+a img { border: none; }
+table { border-collapse: collapse; }
+.text-left{ text-align:left}
+.text-right{ text-align:right}
+.text-center{ text-align:center}
+.pull-left{ float:left}
+.pull-right{ float:right}
+
+.admin-body{height: 100%;padding-bottom: 80px;}
+.list-content__search,.operator{margin-bottom: 20px;}
+table tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+.container .form-group{
+	margin-bottom: 20px;
+}

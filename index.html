@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>会员子系统</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="" rel="stylesheet">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css"  type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/user.css">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="padding-top:80px;" data-spy="scroll"  data-target="#navbarHeader">
+  <div class="admin-header ">
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarHeader">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">*&*健身俱乐部</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarHeader">
+        <ul class="nav navbar-nav">
+          <li class="active" role="navigation"><a href="index.html">首页</a></li>
+          <li role="navigation"><a href="#keepCourse">精品课程</a></li>
+          <li><a href="#keepPlace" role="navigation">火爆场地</a></li>
+          <li><a href="#fitnessTips">健身贴士</a></li>
+          <li><a href="#myModal" data-toggle="modal">系统简介</a></li>
+        </ul>
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>本俱乐部拥有齐全的器械设备，有较全的健身及娱乐项目，有专业的教练进行指导，有良好的健身氛围，价格合理！快来加入吧&hellip;</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="搜索相关信息">
+          </div>
+          <button type="submit" class="btn btn-primary">搜索</button>
+        </form>
+
+        <div class="navbar-dropdown dropdown">
+          <i class="icon-account_circle icon-account_circle-style"></i>
+          <span href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1">欢迎，admin</span>
+          <ul class="dropdown-menu dropdown-menu-l" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation" data-id="user-person-order">
+              <a role="menuitem" tabindex="-1" href="javascript:void(0);">我的订单</a>
+            </li>
+            <li role="presentation" data-id="user-person-set">
+              <a role="menuitem" tabindex="-1" href="javascript:void(0);">个人设置</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">退出</a>
+            </li>
+          </ul>
+          <i class="icon-keyboard_arrow_down"></i>
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+  </div>
+
+  <div class="container person" id="user-main">
+    <!-- 轮播图 start-->
+    <div id="ad-carousel" class="col-md-12 col-sm-12 carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+        <li data-target="#ad-carousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/carousel_01.jpg" alt="1 slide">
+        </div>
+        <div class="item">
+          <img src="images/bg_09.jpg" alt="2 slide">
+        </div>
+        <div class="item">
+          <img src="images/bg_06.jpg" alt="3 slide">
+        </div>
+        <div class="item">
+          <img src="images/bg_11.jpg" alt="4 slide" >
+        </div>
+      </div>
+      <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+        class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+        class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <!-- 轮播图 end -->
+
+    <!-- 课程介绍 -->
+    <div class="info-thumbnail" id="keepCourse">
+      <div class="health-flag"><h6>课程介绍</h6></div>
+      <div class="row">
+        <div class="col-md-5 col-sm-5 course-photo">
+          <img src="images/course_01.jpg" alt="" >
+        </div>
+        <div class="col-md-7 col-sm-7 course-about">
+          <div class="caption">
+            <h3 class="course-title">瑜伽</h3>
+            <p class="course-content">瑜伽姿势运用古老而易于掌握的技巧，改善人们生理、心理、情感和精神方面的能力，是一种达到身体、心灵与精神和谐统一的运动方式，包括调身的体位法、调息的呼吸法、调心的冥想法等，以达至身心的合一。</p>
+            <div class="sell_status" >
+              <div class="btn-reserve">
+                <a href="#" class="btn btn-primary reserve-btn" role="button">预定</a>
+                <!-- <a href="#" class="btn btn-default" role="button">详情</a> -->
+              </div>
+              <span class="for-purchasing">限购 5人</span>
+            </div>
+
+            <!-- 预定 的弹窗-->
+            <div class="mg-1st-user--mask" style="opacity: 1; display: none;" >
+              <div class="mg-1st-user-confirm--wrapper" id="mg_confirm_40850">
+                <div class="mg-1st-user-confirm--title">
+                  <span>提示</span>
+                  <a href="javascript: void (0);" class="mg-1st-user-confirm--close"></a>
+                </div>
+                <div class="mg-1st-user-confirm--content">
+                  <img src="images/icon_03.png">
+                  <span>您确认订购该课程吗</span>
+                </div>
+                <div class="mg-1st-user-confirm--footer">
+                  <button type="button" class="btn btn-primary ">确认</button>
+                  <button type="button" class="btn btn-default">关闭</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-sm-5 course-photo">
+          <img src="images/bg_11.jpg" alt="" >
+        </div>
+        <div class="col-md-7 col-sm-7 course-about">
+          <div class="caption">
+            <h3 class="course-title">拳击</h3>
+            <p class="course-content">拳击训练除了是非常好的减脂运动，每小时消耗600大卡热量，还能充分锻炼人的手眼协调能力，身体灵敏度和反应度，增强心肺功能，拳击有氧让你痛快挥拳击靶！</p>
+            <div class="sell_status" >
+              <div class="btn-reserve">
+                <a href="#" class="btn btn-primary" role="button">预定</a>
+                <!-- <a href="#" class="btn btn-default" role="button">详情</a> -->
+              </div>
+              <span class="for-purchasing">限购 5人</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-sm-5 course-photo">
+          <img src="images/bg_11.jpg" alt="" >
+        </div>
+        <div class="col-md-7 col-sm-7 course-about">
+          <div class="caption">
+            <h3 class="course-title">拳击</h3>
+            <p class="course-content">拳击训练除了是非常好的减脂运动，每小时消耗600大卡热量，还能充分锻炼人的手眼协调能力，身体灵敏度和反应度，增强心肺功能，拳击有氧让你痛快挥拳击靶！</p>
+            <div class="sell_status" >
+              <div class="btn-reserve">
+                <a href="#" class="btn btn-primary" role="button">预定</a>
+                <!-- <a href="#" class="btn btn-default" role="button">详情</a> -->
+              </div>
+              <span class="for-purchasing">限购 5人</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <!-- 场地介绍 -->
+    <div class="info-place" id="keepPlace">
+      <div class="health-flag"><h6>场地介绍</h6></div>
+      <div class="place-section">
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="thumbnail">
+              <img src="images/club_07.jpg">
+              <div class="caption">
+                <h3 class="place-title">斯诺克室</h3>
+                <p class="place-content">斯诺克（司诺克）台球桌尺寸：3820*2035*850mm; 场地平坦、干净、无灰尘、明亮及通风条件良好</p>
+                <p class="place-roono">房间：1-11</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">预定</a>
+                  <span class="for-purchasing">限购 5人</span>
+                  <span class="for-purchasing">房间：1-1</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="thumbnail">
+              <img src="images/club_05.jpg">
+              <div class="caption">
+                <h3 class="place-title">乒乓球场</h3>
+                <p class="place-content">乒乓球比赛场用的是万奥塑胶，有一定的弹性。地面平整、干净、无灰尘、明亮及通风条件良好。</p>
+                <p class="place-roono">房间：1-12</p>
+                <p><a href="#" class="btn btn-primary" role="button">预定</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="thumbnail">
+              <img src="images/club_08.jpg">
+              <div class="caption">
+                <h3 class="place-title">羽毛球场</h3>
+                <p class="place-content">羽毛球场为一长方形场地，长度为13.40米，双打场地宽为6.10米，单打场地宽为5.18米。球场上各条线宽均为4厘米</p>
+                <p><a href="#" class="btn btn-primary" role="button">预定</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 健康贴士 -->
+    <div class="info-fitness-tips" id="fitnessTips">
+      <div class="health-flag"><h6>健康贴士</h6></div>
+      <div class="row row-tips">
+        <ul>
+          <li><a href="" title="">如何选择合适的健身方式</a><span class="tips-time">2017年3月2号</span></li>
+          <li><a href="" title="">饮食也是关键的一环</a><span class="tips-time">2017年3月2号</span></li>
+          <li><a href="" title="">不想健身？很正常!</a><span class="tips-time">2017年3月2号</span></li>
+          <li><a href="" title="">冬季健身房防护小贴士</a><span class="tips-time">2017年3月2号</span></li>
+          <li><a href="" title="">不想健身？很正常</a><span class="tips-time">2017年3月2号</span></li>
+        </ul>
+        <div class="fitness-tip-section fitness-tips">
+          <img src="images/g5.jpg" alt="" class="img-thumbnail img-responsive">
+        </div>
+        <div class="tips-content fitness-tips">
+          <p class="tip-title">健身者实用的一些小贴士</p>
+          <p class="tip-item">1、健身过程中千万不要用手接触面部，尤其是眼睛及耳朵内部。2、有条件的话，健身前可以准备1小瓶75％的酒精，在锻炼后没有时间洗澡的情况下，用酒精将手掌彻底擦一遍，可达到消毒的目的。需注意的是酒精的量要足，要达到让两手湿润的程度。3、尽量别不穿鞋光脚站在更衣室的地面上。4、如果最近一段时间是流感或某种传染疾病的多发期，则应避免去健身房锻炼。为他人好，也是为自己负责。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--  个人设置-->
+  <div class="person" id="user-person-set" style="display: none;">
+    <div class="person-container">
+      <div class="person-header">
+        <span>个人设置</span>
+        <button type="" class="btn btn-default  btn-return"><a href="index.html">返回</a></button>
+      </div>
+      <div class="person-content">
+        <form class="form-horizontal form-inter-register" role="form">
+          <div class="form-group">
+            <label for="inputName" class="col-md-4 control-label">用户名</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" id="inputName">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPhone" class="col-md-4 control-label">手机号</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" id="inputPhone">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputCode" class="col-md-4 control-label">会员卡号</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" id="inputCode">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPhone" class="col-md-4 control-label">性别</label>
+            <div class="col-md-3" style="padding-top: 6px;">
+              <input type="radio" name="sex" value="girl" placeholder="女">
+              <label>女</label>
+              <input class="sex-radio" type="radio" name="sex" value="boy" placeholder="男">
+              <label>男</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputCode" class="col-md-4 control-label">出生日期</label>
+            <div class="col-md-3">
+              <input type="text" class="form-control" id="inputCode">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-offset-4 col-md-3">
+              <button type="submit" class="btn btn-primary">保存</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 我的订单 -->
+  <div class="person" id="user-person-order" style="display: none;">
+    <div class="person-container">
+      <div class="person-header">
+        <span>我的订单</span>
+        <button type="" class="btn btn-default btn-return"><a href="index.html">返回</a></button>
+      </div>
+      <div class="person-content" >
+        <ul class="nav tab-header">
+          <li data-id="person-course" class="active">
+            <a href="javascript: void(0);">我的课程预约</a>
+          </li>
+          <li data-id="person-place">
+            <a href="javascript: void(0);">我的场地预约</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <!--  tab-课程订单 -->
+          <div class="tab-person-content person-content-course" id="person-course">
+            <table class="table table-hover">
+              <thead>
+                <tr >
+                  <th>课程</th>
+                  <th>课程介绍</th>
+                  <th>预约时间</th>
+                  <!-- <th>操作</th> -->
+                </tr>
+              </thead>
+              <tbody id="list">
+                <tr>
+                  <td>瑜伽</td>
+                  <td>瑜伽姿势运用古老而易于掌握的技巧，改善人们生理、心理、情感和精神方面的能力，是一种达到身体、心灵与精神和谐统一的运动方式，包括调身的体位法、调息的呼吸法、调心的冥想法等，以达至身心的合一。</td>
+                  <td>2017-04-13</td>
+                 <!--  <td>
+                    <a href="#" data-role="delete" class="operate—delete">取消预约</a>
+                  </td> -->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--  tab-场地订单 -->
+          <div class="tab-person-content person-content-place" id="person-place" style="display: none;">
+            <table class="table table-hover">
+              <thead>
+                <tr >
+                  <th>场地号</th>
+                  <th>场地介绍</th>
+                  <th>预约时间</th>
+                  <!-- <th>操作</th> -->
+                </tr>
+              </thead>
+              <tbody id="list">
+                <tr>
+                  <td>1-11</td>
+                  <td>斯诺克室</td>
+                  <td>斯诺克（司诺克）台球桌尺寸：3820*2035*850mm; 场地平坦、干净、无灰尘、明亮及通风条件良好</td>
+                  <td>2016.09.01</td>
+                 <!--  <td>
+                    <a href="#" data-role="delete" class="operate—delete">取消预约</a>
+                  </td> -->
+                </tr>
+               <!--  <tr>
+                  <td>瑜伽</td>
+                  <td>瑜伽姿势运用古老而易于掌握的技巧，改善人们生理、心理、情感和精神方面的能力，是一种达到身体、心灵与精神和谐统一的运动方式，包括调身的体位法、调息的呼吸法、调心的冥想法等，以达至身心的合一。</td>
+                  <td>2016.09.01</td>
+                  <td>
+                    <a href="#" data-role="delete" class="operate—delete">取消预约</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1990.09.01</td>
+                  <td>2017.03.21</td>
+                  <td>123456</td>
+                  <td>
+                    <a href="#" data-role="delete" class="operate—delete">取消预约</a>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="pull-right back-top">
+    <p id="back-to-top"><a href="#top">回到顶部</a></p>
+  </div>
+  <script src="js/jquery-1.11.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="js/mg-confirm.js"></script>
+  <script>
+
+  //
+  $('.dropdown').on('click','li',function (e) {
+    var id = $(this).data('id');
+    $('#' + id).show().siblings('.person').hide();
+  });
+
+// 我的订单和个人设置页面中--点击返回 跳转到首页
+$('.btn-return').on('click',function (e) {
+  $('#user-main').show().siblings('.person').hide();
+});
+
+  // 课程订单-场地预约订单--tab切换
+  $('.person-content ul').on('click','li',function(e) {
+    var id = $(this).data('id');
+    $(this).addClass('active').siblings('li').removeClass('active');
+    $('#'+ id ).show().siblings('.tab-person-content').hide();
+  });
+
+
+  $('.reserve-btn').on('click',function(){
+    $('.mg-1st-user--mask').show();
+  });
+
+
+/*    $(".reserve-btn").click(function (e) {
+        $.mgConfirm({
+            title: '提示',
+            content :'确定要订购吗？',
+            nextCallBack: function () {
+                $.mgConfirm({
+                    type: 'alert',
+                    action:'success',
+                    content: '订购成功！'
+                })
+            }
+        })
+      });*/
+    </script>
+  </body>
+  </html>

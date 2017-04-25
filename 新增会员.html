@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>新增会员</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+    <div class=""></div>
+    <div class="container">
+        <div class="title">
+            <span class="title-main">新增会员</span>
+            <button type="" class="btn btn-default  btn-return"><a href="会员信息.html">返回</a></button>
+        </div>
+        <div class="content-tip">
+            <p>操作提示：新增会员账户</p>
+        </div>
+
+       <div class="add-user-content">
+       <form class="form-horizontal" role="form" >
+            <div class="form-group">
+                <label  class="col-md-2 col-xs-2 control-label" for="user_name">会员姓名:</label>
+                <div class="col-md-4 col-xs-4">
+                    <input type="text" class="form-control" id="user_name" placeholder="  " >
+                </div>
+            </div>
+
+            <!-- 会员卡号默认是会员id，若系统自动分配 这段去掉 -->
+            <div class="form-group">
+                <label  class=" col-md-2 col-xs-2 control-label" for="user_id">会员卡号:</label>
+                <div class=" col-md-4 col-xs-4">
+                  <input type="text" class="form-control" id="user_id" placeholder="  " >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class=" col-md-2 col-xs-2 control-label" for="user_phone">手机号:</label>
+                <div class="col-md-4 col-xs-4">
+                    <input type="text" class="form-control" id="user_phone" placeholder="  ">
+                </div>
+            </div>
+            <div class="form-group">
+                <label  class="col-md-2 col-xs-2 control-label" for="user_sex">性别</label>
+                <div class="col-md-4  col-xs-4" style="padding-top: 6px;">
+                    <input type="radio" name="user_sex" value="girl" placeholder="女">
+                    <label>女</label>
+                    <input class="sex-radio" type="radio" name="user_sex" value="boy" placeholder="男">
+                    <label>男</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="user_birthday" class="col-md-2  col-xs-2 control-label">出生日期</label>
+                <div class="col-md-4  col-xs-4 input-append date  form_datetime" id="userBbirthday">
+                  <input type="text" class="form-control"  size="16" value="" data-date-format="yyyy-mm-dd">
+                  <span class="add-on"><i class="icon-th"></i></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-xs-offset-2 col-md-4 col-xs-4">
+                  <button type="submit" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+<script src="js/jquery-1.11.min.js"></script>
+<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="bootstrap/js/bootstrap-datetimepicker.js"></script>
+<script src="bootstrap/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script>
+
+    // 时间控件
+    initDatePicker();
+    function initDatePicker(){
+        // var date = new Date();
+        // var getEndDate=date.getDate();
+        $('.form_datetime').datetimepicker({
+            weekStart: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            placeholder:'请选择您的生日',
+            format: 'yyyy-mm-dd',
+            // format: 'yyyy-mm-dd hh:ii',
+            language:'zh-CN',
+            endDate: '2017.04.11',
+        });
+
+    }
+
+</script>
+
+</body>
+</html>

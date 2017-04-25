@@ -1,0 +1,295 @@
+/* public css */
+.mg-inter-login--main__inner__form > .form-group {
+  margin-bottom: 28px;
+}
+
+.sign-in-btn {
+  width: 100%;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: #C73387;
+}
+
+.sign-in-btn:hover {
+  background-color: #C73387;
+}
+
+.sign-in-btn:visited {
+  background-color: #C73367!important;
+}
+
+.sign-in-btn:active {
+  background-color: #C73367!important;
+}
+
+.form-group-tip-button {
+  margin-bottom: 20px!important;
+}
+
+.form-group-tip-txt {
+  overflow: hidden;
+}
+
+.login-tip-txt {
+  color: #C73387;
+}
+
+.forgot-pwd-txt {
+  float: left;
+}
+
+.sign-up-txt {
+  float: right;
+}
+
+.other-login-type {
+  display: -webkit-flex;
+  display: -ms-flexbox; /*解决IE10对flex的不兼容 */
+  display: flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.other-login-type__cell {
+  -webkit-flex: 1;
+  -ms-flex: 1;/*解决IE10对flex的不兼容*/
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex:1;
+  text-align: center;
+}
+
+.other-login-type__cell--circle {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #e4393c;
+  cursor: pointer;
+}
+
+.iconfont {
+  color: #fff;
+  font-size: 22px;
+}
+
+.icon-icon {
+  font-size: 17px;
+}
+
+.cell--circle-facebook {
+  text-align: center;
+  padding-left: 50px;
+}
+.cell--circle-google {
+  text-align: center;
+  padding-right: 50px;
+}
+
+.mg-bg-facebook {
+  background-color: #1A508F;
+}
+
+.mg-bg-google {
+  background-color: #DB5451;
+}
+
+.mg-bg-twitter {
+  background-color: #00ACED;
+}
+
+.mg-inter-login--footer {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #b8b8b8;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+
+/* bootstrap 重写*/
+.panel-default>.panel-heading {
+  background-color: #90e4c1;
+}
+/* for desktop app */
+@media only screen and (min-width: 1024px) {
+/*  body {
+    overflow: hidden;
+  }
+*/
+  .mg-inter-login--header {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+  }
+
+  .mg-inter-login--header > ul {
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .mg-inter-login--header__menu {
+    float: right;
+    height: 100%;
+    line-height: 70px;
+  }
+
+  .mg-inter-login--header__menu--item {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor: default;
+  }
+
+  .mg-inter-login--header__menu--inter {
+    position: relative;
+    zoom: 1;
+  }
+
+  .mg-inter-login--header__menu--item > i {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .split-line {
+    border-right: 1px solid #c1c1c1;
+    height: 1em;
+    position: absolute;
+    right: 0;
+    top: 1px;
+  }
+
+  .mg-inter-login--header__logo {
+    float: left;
+  }
+
+  .mg-inter-login--header__logo > img {
+    margin-top: 18px;
+  }
+
+  .mg-inter-login--main {
+    width: 100%;
+    height: 500px;
+    background: url("../images/Sign_bg.jpg") no-repeat center center #000;
+  }
+
+  .mg-inter-login--main__inner {
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+  }
+
+  .mg-inter-login--main__inner__form {
+    width: 460px;
+    height: 416px;
+    background-color: #fff;
+    border-radius: 2px;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    padding: 65px 35px 0;
+  }
+
+  .mg-sign-in--welcome-logo {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  }
+
+}
+
+/* for mobile and tablet app */
+/*@media only screen and (max-width: 1024px) {
+  body {
+    padding: 0 30px;
+  }
+
+  .mg-inter-login--header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+  }
+
+  .mg-inter-login--header > ul {
+    width: 100%;
+  }
+
+  .mg-inter-login--header__menu {
+    width: 100%;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .mg-inter-login--header__menu--item {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor: default;
+  }
+
+  .mg-inter-login--header__menu--inter {
+    display: none;
+  }
+
+  .mg-inter-login--header__menu--item > i {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .split-line {
+    border-right: 1px solid #ccc;
+    height: 1em;
+    position: absolute;
+    right: 0;
+    top: 17px;
+  }
+
+  .mg-inter-login--header__logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mg-sign-in--welcome-logo {
+    display: none;
+  }
+
+  .mg-inter-login--main, .mg-inter-login--main__inner, .mg-inter-login--main__inner__form {
+    width: 100%;
+    height: auto;
+  }
+
+  .mg-inter-login--main__inner__form .form-control {
+    height: 40px;
+  }
+
+  .form-group-line {
+    margin-bottom: 20px!important;
+  }
+
+  .mg-inter-login--footer {
+    display: none;
+  }
+}
+*/

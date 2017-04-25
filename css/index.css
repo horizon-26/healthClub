@@ -1,0 +1,207 @@
+  @charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2017-03-06 17:24:43
+ * @version $Id$
+ */
+
+
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-22 20:47:22
+ * @version $Id$
+ */
+
+/* bootstrap 重写*/
+.panel-body{
+    padding:4px 10px;
+}
+.container{
+    width: 100%;
+
+}
+
+.dropdown-menu>li>a{
+	    color: #3E93FD;
+}
+.navbar-nav {
+	margin-right: 50px;
+}
+/* end*/
+.color_fff{
+	color: #fff;
+}
+.bg{
+	background: url(../images/bg_10.jpg) repeat-x center center transparent;
+	background-size: cover;
+	-webkit-background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+}
+.container-main label{
+	color: #fff;
+	font-weight: normal;
+	font-size: 16px;
+}
+.inter-login--header{
+	height: 80px;
+    background-color: #fff;
+	font-size: 30px;
+    color: #555;
+}
+.header ul .health-header-title{
+	float: left;
+    margin: 0 auto;
+    padding-left: 546px;
+}
+.header ul .health-header-item{
+	float: right;
+    margin-right: 120px;
+    width: 100px;
+    font-size: 12px;
+}
+.header-title{
+	line-height: 80px;
+    padding-left: 60px;
+}
+.inter-login--main{
+	/*height: auto;
+	min-height: calc(100vh - 130px);*/
+	position: relative;
+	height: 500px;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+.register-bg{
+	background: url(../images/bg_1.jpg) repeat-x center center transparent;
+}
+.inter-login--main__inner{
+	width: 530px;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: rgba(0,0,0,0.1);
+}
+.register-bg label {
+	color: #555;
+}
+.inter-login--main form{
+	margin: 40px;
+}
+.erro-tip{
+	color: #d2322d;
+	line-height: 34px;
+	font-size: 14px;
+}
+.change-yzm{
+	height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+.inter-login--footer{
+	height: 50px;
+    line-height: 50px;
+    /*background-color: rgba(0,0,0,0.5);*/
+    text-align: center;
+    color: #555;
+}
+
+.form-group .sex-radio{
+	margin-left: 20px;
+}
+/*后台管理 start*/
+.header{
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    background-color: #bee2c1;
+}
+.list-content__title{
+	height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.paging-skip{
+	margin: 10px;
+}
+.paging-input{
+	width: 40px;
+	border-radius: 2px;
+}
+.paging-center{
+	text-align: center;
+}
+.panel-default>.panel-heading{
+    background-color:#dff0d8;
+}
+
+/*表格*/
+.table>tbody>tr>td{
+	max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*后台管理 end*/
+
+/*用户管理 start*/
+/*.container-left{
+    width: 160px;
+    height: 100%;
+    margin-left: 30px;
+}*/
+.content_right{
+    margin-left: 30px;
+    height: 100%;
+    display: block;
+
+}
+/*用户管理 end*/
+
+
+/*会员分析 start*/
+.health-club-analysis---container{
+	width: 98%;
+	height: 400px;
+}
+/*新增会员*/
+.title{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.btn-return{
+	height: 30px;
+	line-height: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    float: right;
+}
+.list-content__title .btn-return{
+	margin-right: 20px;
+}
+.title .btn-return{
+	margin-right: 20px;
+}
+.content-tip{
+	padding-bottom: 20px;
+    border-bottom: 1px solid #d7e4db;
+    margin-bottom: 30px;
+}
+.place-order-section .table>tbody>tr {
+    height: 44px;
+}
+.place-order-section  .table>tbody>tr>td {
+    vertical-align: middle;
+}
+.pull-bottom{
+	margin-bottom: 50px;
+}

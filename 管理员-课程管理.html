@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>管理员-课程信息管理</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/main.css"  type="text/css">
+<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class=""></div>
+<div class="content_right">
+	<div class="list-content__title">
+        <span class="title-main">课程信息列表</span>
+    </div>
+    <div class="list-content__search">
+        <div class="row">
+            <div class="col-md-2 col-xs-2"><label>课程查询：</label></div>
+            <div class="col-md-3 col-xs-3 padding-left-no"><input type="text" placeholder="搜索相关数据..." class="form-control" id=""></div>
+            <div class="col-md-2 col-xs-2 padding-left-no"><button class="btn btn-primary" type="button">搜索</button></div>
+        </div>
+    </div>
+        <div class="list-content__table">
+            <div class="operator">
+                <a href="新增课程.html">
+                	<button class="btn btn-primary" type="button">新增课程</button>
+                </a>
+                <button class="btn btn-red" type="button">批量删除</button>
+            </div>
+		    <table class="table table-hover">
+			    <thead>
+			        <tr >
+			            <th class="all-check" >
+			                <label class="am-checkbox-inline">
+			                    <input type="checkbox" id="allCheck" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+			                     <span class="am-ucheck-icons">
+			                        <i class="am-icon-unchecked"></i>
+			                        <i class="am-icon-checked"></i>
+			                    </span>
+			                   全选
+			                </label>
+			            </th>
+			            <th>课程名称</th>
+			            <th>课程介绍</th>
+			            <th>限额数</th>
+			            <th>操作</th>
+			        </tr>
+			    </thead>
+			    <tbody id="list">
+			        <tr>
+			            <td class="single-check">
+			                <label class="am-checkbox-inline">
+			                    <input type="checkbox" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+			                    <span class="am-ucheck-icons">
+			                        <i class="am-icon-unchecked"></i>
+			                        <i class="am-icon-checked"></i>
+			                    </span> &nbsp;
+			                </label>
+			            </td>
+			            <td>瑜伽</td>
+			            <td>瑜伽姿势运用古老而易于掌握的技巧，改善人们生理、心理、情感和精神方面的能力，是一种达到身体、心灵与精神和谐统一的运动方式，包括调身的体位法、调息的呼吸法、调心的冥想法等，以达至身心的合一。</td>
+			            <td>5</td>
+			            <td>
+			                <a href="#" data-role="operate" class="operate-edit">编辑</a>
+			                <a href="#" data-role="delete" class="operate—delete">删除</a>
+			            </td>
+			        </tr>
+			        <tr>
+			            <td class="single-check">
+			                <label class="am-checkbox-inline">
+			                    <input type="checkbox" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+			                    <span class="am-ucheck-icons">
+			                        <i class="am-icon-unchecked"></i>
+			                        <i class="am-icon-checked"></i>
+			                    </span> &nbsp;
+			                </label>
+			            </td>
+			            <td>跆拳道</td>
+			            <td>跆拳道是......</td>
+			            <td>3</td>
+			            <td>
+			                <a href="#" data-role="operate" class="operate-edit">编辑</a>
+			                <a href="#" data-role="delete" class="operate—delete">删除</a>
+			            </td>
+			        </tr>
+			        <tr>
+			            <td class="single-check">
+			                <label class="am-checkbox-inline">
+			                    <input type="checkbox" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+			                    <span class="am-ucheck-icons">
+			                        <i class="am-icon-unchecked"></i>
+			                        <i class="am-icon-checked"></i>
+			                    </span> &nbsp;
+			                </label>
+			            </td>
+			           	<td>举重</td>
+			            <td>举重是......</td>
+			            <td>6</td>
+			            <td>
+			                <a href="#" data-role="operate" class="operate-edit">编辑</a>
+			                <a href="#" data-role="delete" class="operate—delete">删除</a>
+			            </td>
+			        </tr>
+			    </tbody>
+		    </table>
+		    <div class="paging-center">
+			    <ul class="pagination">
+			        <li>
+			          <a href="#" aria-label="Previous">
+			            <span aria-hidden="true">&laquo;</span>
+			          </a>
+			        </li>
+			        <li><a href="#">1</a></li>
+			        <li><a href="#">2</a></li>
+			        <li><a href="#">3</a></li>
+			        <li><a href="#">4</a></li>
+			        <li><a href="#">5</a></li>
+			        <li><a href="#" class="more">...</a>
+			        <li>
+			          <a href="#" aria-label="Next">
+			            <span aria-hidden="true">&raquo;</span>
+			          </a>
+			        </li>
+			        <span class="paging-skip">跳转到第</span>
+			        <input type="text" name="tz" value="" class="paging-input">
+			        <span class="paging-skip">页</span>
+			        <button type="button" class="btn btn-primary">确定</button>
+			    </ul>
+		    </div>
+	    </div>
+</div>
+<script src="js/jquery-1.11.min.js"></script>
+<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/admin.js"></script>
+<script>
+		$("#allCheck").click(function(){
+	    if(this.checked){
+	        $("#list :checkbox").prop("checked", true);
+	    }else{
+			$("#list :checkbox").prop("checked", false);
+	    }
+	});
+
+	$("#list :checkbox").click(function(){
+		allchk();
+	});
+
+</script>
+</body>
+</html>

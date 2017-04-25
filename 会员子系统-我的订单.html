@@ -1,0 +1,130 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>会员使用模块-我的订单</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="" rel="stylesheet">
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/main.css"  type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/user.css">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="person">
+		<div class="person-container">
+			<div class="person-header">
+				<span>我的订单</span>
+				<button type="" class="btn btn-default  btn-return"><a href="index.html" titlae="">返回</a></button>
+			</div>
+			<div class="person-content" >
+				<ul class="nav tab-header">
+					<li data-id="person-course" class="active">
+						<a href="javascript: void(0);">我的课程预约</a>
+					</li>
+					<li data-id="person-place">
+						<a href="javascript: void(0);">我的场地预约</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-person-content person-content-course" id="person-course">
+						<table class="table table-hover">
+							<thead>
+								<tr >
+									<th>课程</th>
+									<th>课程介绍</th>
+									<th>预约时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody id="list">
+								<tr>
+									<td>拳击</td>
+									<td>拳击训练除了是非常好的减脂运动，每小时消耗600大卡热量，还能充分锻炼人的手眼协调能力，身体灵敏度和反应度，增强心肺功能，拳击有氧让你痛快挥拳击靶！</td>
+									<td>2016.09.01</td>
+									<td>
+										<a href="#" data-role="delete" class="operate—delete">取消预约</a>
+									</td>
+								</tr>
+								<tr>
+									<td>瑜伽</td>
+									<td>瑜伽姿势运用古老而易于掌握的技巧，改善人们生理、心理、情感和精神方面的能力，是一种达到身体、心灵与精神和谐统一的运动方式，包括调身的体位法、调息的呼吸法、调心的冥想法等，以达至身心的合一。</td>
+									<td>2016.09.01</td>
+									<td>
+										<a href="#" data-role="delete" class="operate—delete">取消预约</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1990.09.01</td>
+									<td>2017.03.21</td>
+									<td>123456</td>
+									<td>
+										<a href="#" data-role="delete" class="operate—delete">取消预约</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="tab-person-content person-content-place" id="person-place" style="display: none;">
+						<table class="table table-hover">
+							<thead>
+								<tr >
+									<th>场地号</th>
+									<th>场地介绍</th>
+									<th>预约时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody id="list">
+								<tr>
+									<td>拳击</td>
+									<td>拳击训练除了是非常好的减脂运动，每小时消耗600大卡热量，还能充分锻炼人的手眼协调能力，身体灵敏度和反应度，增强心肺功能，拳击有氧让你痛快挥拳击靶！</td>
+									<td>2016.09.01</td>
+									<td>
+										<a href="#" data-role="delete" class="operate—delete">取消预约</a>
+									</td>
+								</tr>
+								<tr>
+									<td>瑜伽</td>
+									<td>瑜伽姿势运用古老而易于掌握的技巧，改善人们生理、心理、情感和精神方面的能力，是一种达到身体、心灵与精神和谐统一的运动方式，包括调身的体位法、调息的呼吸法、调心的冥想法等，以达至身心的合一。</td>
+									<td>2016.09.01</td>
+									<td>
+										<a href="#" data-role="delete" class="operate—delete">取消预约</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1990.09.01</td>
+									<td>2017.03.21</td>
+									<td>123456</td>
+									<td>
+										<a href="#" data-role="delete" class="operate—delete">取消预约</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+<script src="js/jquery-1.11.min.js"></script>
+<script>
+
+// 课程订单-场地预约订单--tab切换
+	$('.person-content ul').on('click','li',function(e) {
+		var id = $(this).data('id');
+		$(this).addClass('active').siblings('li').removeClass('active');
+		$('#'+ id ).show().siblings('.tab-person-content').hide();
+	});
+</script>
+</body>
+</html>

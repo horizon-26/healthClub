@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2017-03-27 10:00:47
+ * @version $Id$
+ */
+ .carousel,.info-thumbnail .row{
+ 	margin-bottom: 40px;
+ }
+ /* nav-bar 当前用户*/
+ .admin-header .health-header-item .dropdown span{
+ 	line-height: 50px;
+ }
+ .admin-header .navbar-dropdown {
+ 	float: right;
+    margin-right: 30px;
+ 	font-size: 12px;
+ 	line-height: 50px;
+ 	color: #fff;
+ }
+ .admin-header .navbar-dropdown ul{
+ 	min-width: 120px;
+ 	left: -20px;
+ }
+ .admin-header .carousel-inner .item a img,.admin-header .carousel-inner .item img{
+ 	width: auto;
+ 	height: 300px;
+ }
+ /*end*/
+ /*轮播图样式*/
+/* .carousel{
+ 	padding-left: 80px;
+ 	padding-right: 80px;
+ }
+ .carousel-inner{
+ 	margin-left: 64px;
+ 	margin-right: 64px;
+ }*/
+ .carousel-inner>.item>a>img,
+ .carousel-inner>.item>img{
+ 	width: 100%;
+ 	height: 550px;
+
+ }
+/* .carousel-control{
+ 	left: 78px;
+ }*/
+ .carousel-control.left{
+ 	background-image:none;
+ }
+ .carousel-control.right{
+ 	/*right: 214px;*/
+ 	background-image:none;
+ }
+ /* end */
+ /* 精品课程 start */
+ .health-flag{
+ 	float: right;
+ 	width: 100%;
+ 	padding-bottom: 6px;
+ 	margin-bottom: 40px;
+ }
+.health-flag h6{
+  position:relative;
+  margin-left: 49%;
+  color: #e5819e;
+  font-size: 16px;
+}
+.health-flag h6:before{
+  left: -96%;
+}
+.health-flag h6:after, .health-flag h6:before{
+  content:"";
+  border-top:2px solid #E8E8E8;
+  display:block;
+  position:absolute;
+  width: 92%;
+  top:10px;
+}
+.health-flag h6:after{
+  right:-8%;
+}
+ .info-thumbnail,.info-place,.info-fitness-tips{
+ 	padding-left: 80px;
+ 	padding-right: 80px;
+ }
+ .caption .place-title{
+ 	font-size: 20px;
+ 	padding-bottom: 20px;
+ }
+ .caption .place-content{
+ 	padding-bottom: 20px;
+ }
+ .place-section{
+ 	margin-bottom: 40px;
+ }
+ .thumbnail{
+ 	height: 400px;
+ 	position: relative;
+ 	padding-left: 20px;
+ 	padding-right: 20px;
+
+ }
+ .thumbnail>img{
+ 	width: 300px;
+ 	max-height: 200px;
+ 	padding-top: 20px;
+ }
+ .caption p:last-child{
+ 	position: absolute;
+ 	bottom: 10px;
+ }
+ .for-purchasing {
+ 	padding-left: 70px;
+ 	color: #aaa;
+ }
+ .info-thumbnail .row:nth-child(2n) .course-photo{
+ 	float: right;
+ }
+ .info-thumbnail .course-photo img{
+ 	padding: 40px 20px 20px 0;
+ 	height: 280px;
+ 	max-width: 380px;
+ }
+
+ .info-thumbnail .course-about{
+ 	padding: 40px 20px 20px 20px;
+ 	height: 280px;
+ }
+ .course-title{
+ 	font-size: 26px;
+ 	color: #6495ed;
+ 	padding-top: 20px;
+ 	padding-bottom: 30px;
+ }
+ .caption .sell_status{
+ 	position: absolute;
+ 	bottom: 20px;
+ }
+ .btn-reserve{
+ 	display: inline-block;
+ }
+ .row{
+ 	margin: 0;
+ }
+ /* end */
+
+ /* 系统简介*/
+ .modal{
+ 	top: 20px;
+ }
+ .modal-backdrop{
+ 	z-index: 1020;
+ }
+ .modal-content{
+ 	width: 500px;
+ 	color: #6495ed;
+ }
+
+ .back-top{
+ 	padding-right: 20px;
+
+ }
+
+ /*个人资料*/
+ .navbar-person{
+ 	padding: 40px;
+ 	padding-right: 100px;
+ }
+ .person-container{
+ 	margin-left: 80px;
+ 	margin-right: 140px;
+ 	background-color: #fff;
+ }
+ .person-header{
+ 	height: 50px;
+ 	line-height: 50px;
+ 	padding-left: 50px;
+ 	border-bottom: 1px solid #c95b5b;
+ 	font-size: 20px;
+ }
+ .person-content{
+ 	margin: 50px auto;
+ 	padding-left: 30px;
+ 	padding-right: 30px;
+ }
+ .person-content .form-group{
+ 	margin-bottom: 25px;
+ }
+ .person-content .nav li{
+ 	width: 150px;
+ 	height: 50px;
+ 	line-height: 30px;
+ 	float: left;
+ 	text-align: center;
+ 	background-color: #fff;
+  /*background-color: #eee;*/
+
+ 	border: 1px solid #ccc;
+ }
+ .person-content .nav li+li{
+ 	margin-left: -1px;
+ }
+ .person-content .nav li.active{
+ 	background-color: #eee;
+ 	border-bottom: none;
+ }
+ .person-content .nav li.active>a{
+ 	color: #23527c;
+ }
+/*  .person-content .nav>li>a:focus{
+   background-color: #fff;
+} */
+ .person-content .table>tbody>tr{
+ 	height: 60px;
+ }
+ .person-content .table>tbody>tr>td{
+ 	vertical-align: middle;
+ }
+ .tab-header{
+ 	/*width: 900px;*/
+ 	margin: 0 auto 30px;
+ }
+ .tab-header：after{
+ 	clear: both;
+ 	content: '.';
+ 	display: block;
+ 	height: 0;
+ 	visibility: hidden;
+ }
+ .btn-return{
+ 	height: 30px;
+ 	line-height: 16px;
+ 	padding-left: 20px;
+ 	padding-right: 20px;
+ 	margin-top: 10px;
+ 	float: right;
+ }
+ .btn-return a{
+ 	color: #555;
+ }
+ /*场地介绍*/
+ /*tips*/
+ .row-tips .fitness-tips{
+ 	box-sizing:border-box;
+ 	-moz-box-sizing:border-box;	/* Firefox */
+ 	-webkit-box-sizing:border-box;	/* Safari */
+ 	width:50%;
+ 	float:left;
+ }
+ .tips-content .tip-item{
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	max-height: 200px;
+ }
+ .tip-title{
+ 	font-size: 18px;
+ 	padding-bottom: 20px;
+ 	text-align: center;
+ }
+ .row-tips{
+ 	padding-left: 28px;
+ }
+ .row-tips ul li{
+ 	list-style-type: circle;
+ 	border-bottom: 1px dotted #333;
+ 	padding-bottom: 8px;
+ 	margin-bottom: 8px;
+ }
+ .row-tips ul li span{
+ 	float: right;
+ }
+
+ /* Confirm */
+.mg-1st-user--mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 9999;
+}
+
+.mg-1st-user-confirm--wrapper {
+    width: 378px;
+    height: 240px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top: 60px;
+    padding-bottom: 56px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.mg-1st-user-confirm--title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin-top: -60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mg-1st-user-confirm--close {
+    float: right;
+    width: 10px;
+    height: 10px;
+    background: url("../images/main/close-icon.png") no-repeat center center transparent;
+    margin-top: 25px;
+}
+
+.mg-1st-user-confirm--logo {
+    display: inline-block;
+    width: 73px;
+    height: 73px;
+    background: url("../images/main/icon_03.png") no-repeat center center transparent;
+    border: none;
+}
+
+.mg-1st-user-confirm--content {
+    width: 100%;
+    height: 100%;
+    line-height: 94px;
+    text-align: center;
+}
+
+.mg-1st-user-confirm--content > img {
+    margin-right: 10px;
+}
+
+.mg-1st-user-confirm--footer {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    margin-bottom: -56px;
+    background-color: #f6f6f6;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+}
+
+.mg-1st-user-confirm--footer button {
+    width: 85px;
+    height: 35px;
+}
+
+.mg-1st-user-confirm--footer button:first-child {
+    margin-right: 8px;
+}
+
+/* Alert  start*/
+.mg-1st-user-alert--wrapper {
+    width: 240px;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mg-1st-user-alert--success-wrapper {
+    color: #2D9953;
+}
+
+.mg-1st-user-alert--fail-wrapper {
+    color: #FF6131;
+}
+
+.mg-1st-user-alert--wrapper img {
+    margin-right: 6px;
+}
+/* Alert end */

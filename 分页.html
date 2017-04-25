@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>管理员-会员信息管理</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="" rel="stylesheet">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/main.css"  type="text/css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<div class=""></div>
+	<div class="content_right">
+		<div class="list-content__title">
+			<span class="title-main">会员信息列表</span>
+		</div>
+		<div class="list-content__search">
+			<div class="row">
+				<div class="col-md-2 col-xs-2"><label>会员查询：</label></div>
+				<div class="col-md-3 col-xs-3 padding-left-no">
+					<select class="form-control">
+						<option value="phone" selected>手机号码</option>
+						<option value="cardNumber">会员卡号</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-xs-3 padding-left-no"><input type="text" placeholder="搜索相关数据..." class="form-control" id=""></div>
+				<div class="col-md-2 col-xs-2 padding-left-no"><button class="btn btn-primary" type="button">搜索</button></div>
+			</div>
+		</div>
+		<div class="list-content__table">
+			<div class="operator">
+				<a href="新增会员.html">
+					<button class="btn btn-primary" type="button">新增会员</button>
+				</a>
+				<button class="btn btn-red" type="button">批量删除</button>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr >
+						<th class="all-check" >
+							<label class="am-checkbox-inline">
+								<input type="checkbox" id="allCheck" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+								<span class="am-ucheck-icons">
+									<i class="am-icon-unchecked"></i>
+									<i class="am-icon-checked"></i>
+								</span>
+								全选
+							</label>
+						</th>
+						<th>会员卡号</th>
+						<th>会员姓名</th>
+						<th>会员性别</th>
+						<th>会员手机号</th>
+						<th>出生日期</th>
+						<th>注册日期</th>
+						<th>登录密码</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody id="list">
+					<tr>
+						<td class="single-check">
+							<label class="am-checkbox-inline">
+								<input type="checkbox" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+								<span class="am-ucheck-icons">
+									<i class="am-icon-unchecked"></i>
+									<i class="am-icon-checked"></i>
+								</span> &nbsp;
+							</label>
+						</td>
+						<td>0001</td>
+						<td>苹果1</td>
+						<td>女</td>
+						<td>13892562288</td>
+						<td>1990.09.01</td>
+						<td>2016.09.01</td>
+						<td>123456</td>
+						<td>
+							<a href="#" data-role="delete" class="operate—delete">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="single-check">
+							<label class="am-checkbox-inline">
+								<input type="checkbox" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+								<span class="am-ucheck-icons">
+									<i class="am-icon-unchecked"></i>
+									<i class="am-icon-checked"></i>
+								</span> &nbsp;
+							</label>
+						</td>
+						<td>0002</td>
+						<td>苹果</td>
+						<td>男</td>
+						<td>13892562281</td>
+						<td>1994.09.01</td>
+						<td>2017.03.01</td>
+						<td>123456</td>
+						<td>
+							<a href="#" data-role="delete" class="operate—delete">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="single-check">
+							<label class="am-checkbox-inline">
+								<input type="checkbox" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+								<span class="am-ucheck-icons">
+									<i class="am-icon-unchecked"></i>
+									<i class="am-icon-checked"></i>
+								</span> &nbsp;
+							</label>
+						</td>
+						<td>0003</td>
+						<td>苹果</td>
+						<td>女</td>
+						<td>13892562288</td>
+						<td>1990.09.01</td>
+						<td>2017.03.21</td>
+						<td>123456</td>
+						<td>
+							<a href="#" data-role="delete" class="operate—delete">删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="paging-center" id="Pagination">
+				<ul class="pagination" id="Searchresult" style="display: none;">
+					<li>
+						<a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#" class="more">...</a>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+						<li><a href="#" class="more">末页</a></li>
+						<span class="paging-skip">跳转到第</span>
+						<input type="text" name="tz" value="" class="paging-input" id="pageActive">
+						<span class="paging-skip">页</span>
+						<button type="button" class="btn btn-primary">确定</button>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.min.js"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cypager.min.js"></script>
+		<script src="js/admin.js"></script>
+		<script>
+			$("#allCheck").click(function(){
+				if(this.checked){
+					$("#list :checkbox").prop("checked", true);
+				}else{
+					$("#list :checkbox").prop("checked", false);
+				}
+			});
+
+			$("#list :checkbox").click(function(){
+				allchk();
+			});
+
+
+	// 分页
+
+
+</script>
+</body>
+</html>

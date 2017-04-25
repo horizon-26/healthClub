@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>管理员维护</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/main.css"  type="text/css">
+<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="content_right">
+	<div class="list-content__title">
+        <span class="title-main">管理员信息列表(共10条)</span>
+    </div>
+    <div class="list-content__search">
+        <div class="row">
+            <div class="col-md-2 col-xs-2"><label for="">查询：</label></div>
+            <div class="col-md-3 col-xs-3 padding-left-no"><input type="text" placeholder="搜索相关数据..." class="form-control" id=""></div>
+            <div class="col-md-2 col-xs-2 padding-left-no"><button class="btn btn-primary" type="button">搜索</button></div>
+        </div>
+    </div>
+        <div class="list-content__table">
+            <div class="operator">
+                <a href="新增管理员.html">
+                	<button class="btn btn-primary" type="button">新增管理员</button>
+                </a>
+                <button class="btn btn-red" type="button">批量删除</button>
+            </div>
+		    <table class="table table-hover">
+			    <thead>
+			        <tr >
+			            <th class="all-check" >
+			                <label class="am-checkbox-inline">
+			                    <input type="checkbox" id="allCheck" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+			                     <span class="am-ucheck-icons">
+			                        <i class="am-icon-unchecked"></i>
+			                        <i class="am-icon-checked"></i>
+			                    </span>
+			                   全选
+			                </label>
+			            </th>
+			            <th>管理员编号</th>
+			            <th>管理员姓名</th>
+			            <th>管理员手机号</th>
+			            <th>权限</th>
+			            <th>操作</th>
+			        </tr>
+			    </thead>
+			    <tbody id="list">
+			        <tr>
+			            <td class="single-check">
+			                <label class="am-checkbox-inline">
+			                    <input type="checkbox" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+			                    <span class="am-ucheck-icons">
+			                        <i class="am-icon-unchecked"></i>
+			                        <i class="am-icon-checked"></i>
+			                    </span> &nbsp;
+			                </label>
+			            </td>
+			            <td>a0001</td>
+			            <td>龙哥</td>
+			            <td>13892562288</td>
+			            <td>1</td>
+			            <td>
+			                <a href="#" data-role="operate" class="operate-edit">编辑</a>
+			                <a href="#" data-role="delete" class="operate—delete">删除</a>
+			            </td>
+			        </tr>
+			        <tr>
+			            <td class="single-check">
+			                <label class="am-checkbox-inline">
+			                    <input type="checkbox" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+			                    <span class="am-ucheck-icons">
+			                        <i class="am-icon-unchecked"></i>
+			                        <i class="am-icon-checked"></i>
+			                    </span> &nbsp;
+			                </label>
+			            </td>
+			            <td>a0002</td>
+			            <td>龙哥2</td>
+			            <td>13892562288</td>
+			            <td>2</td>
+			            <td>
+			                <a href="#" data-role="operate" class="operate-edit">编辑</a>
+			                <a href="#" data-role="delete" class="operate—delete">删除</a>
+			            </td>
+			        </tr>
+			        <tr>
+			            <td class="single-check">
+			                <label class="am-checkbox-inline">
+			                    <input type="checkbox" value="" data-am-ucheck="" class="am-ucheck-checkbox">
+			                    <span class="am-ucheck-icons">
+			                        <i class="am-icon-unchecked"></i>
+			                        <i class="am-icon-checked"></i>
+			                    </span> &nbsp;
+			                </label>
+			            </td>
+			            <td>a0003</td>
+			            <td>龙哥1</td>
+			            <td>13892562288</td>
+			            <td>1</td>
+			            <td>
+			                <a href="#" data-role="operate" class="operate-edit">编辑</a>
+			                <a href="#" data-role="delete" class="operate—delete">删除</a>
+			            </td>
+			        </tr>
+			    </tbody>
+		    </table>
+		    <div class="paging-center">
+			    <ul class="pagination">
+			        <li>
+			          <a href="#" aria-label="Previous">
+			            <span aria-hidden="true">&laquo;</span>
+			          </a>
+			        </li>
+			        <li><a href="#">1</a></li>
+			        <li><a href="#">2</a></li>
+			        <li><a href="#">3</a></li>
+			        <li><a href="#">4</a></li>
+			        <li><a href="#">5</a></li>
+			        <li><a href="#" class="more">...</a>
+			        <li>
+			          <a href="#" aria-label="Next">
+			            <span aria-hidden="true">&raquo;</span>
+			          </a>
+			        </li>
+			        <span class="paging-skip">跳转到第</span>
+			        <input type="text" name="tz" value="" class="paging-input">
+			        <span class="paging-skip">页</span>
+			        <button type="button" class="btn btn-primary">确定</button>
+			    </ul>
+		    </div>
+	    </div>
+</div>
+<script src="js/jquery-1.11.min.js"></script>
+<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
